@@ -42,11 +42,12 @@ function addPopularityButton() {
 
 async function showMovies(pageNumber = 1, sort_by = "desc") {
   movieListSection.innerText = "";
-   const options = {
-    method: 'GET',
+  const options = {
+    method: "GET",
     headers: {
-      accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIxZGNkZWM4NGYyZDc1ODA2NWFhYzNjZTYxY2E1ZWViNiIsInN1YiI6IjY0ZDUwNjEyZDEwMGI2MDExYzgwMjcwZiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.LAzifNPFYjWGUYG7cfkemM6yyoe5gK_bI-H_dhWhVvc',
+      accept: "application/json",
+      Authorization:
+        "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3NjE1ZDM3YTczYWQ5MzVlMmExZjg4N2ZhNTllMmY1ZiIsInN1YiI6IjY0ZDRiYjZmZGI0ZWQ2MDBlMmI1ODQ5OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qTL5AjBr_twKgRjFibgHEIv1OLlrigLLkyTkTzlV2OI",
     },
   };
   let response;
